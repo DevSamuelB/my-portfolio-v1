@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="./node_modules/eins-modal/dist/css/eins-modal.min.css">
+
     <title>Samuel Barreto Valencia | Portafolio</title>
 </head>
 <body>
@@ -72,7 +74,7 @@
             <h2>Experience</h2>
             <hr class="hr">
             <div>
-                <a>
+                <a data-modal-id="myModal">
                     <img  src="./assets/img/experience/xorex.jpeg">
                     <h4>Xorex de Colombia</h4>
                 </a>
@@ -105,10 +107,22 @@
                     <img id="youtube" src="./assets/img/social/youtube.svg">
                 </a>
             </nav>
-           
+       
             <footer><small>This page was developed and designed by Samuel Steven Barreto Valencia. ©2023 All rigths reserved. </small></footer>
         </section>
     </main> 
+    <!-- Modal -->
+<div id="myModal" class="eins-modal">
+    <div class="eins-modal-content">
+      <div class="eins-modal-close"></div>
+  
+      <!-- Your Content -->
+      Mi segundo trabajo!
+      
+      <button class="eins-modal-close-button">Close</button>
+    </div>
+  </div>
     <script src="./assets/js/script.js"></script>
+    <script src="./node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 </body>
 </html>

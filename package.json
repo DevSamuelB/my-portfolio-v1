@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/DevSamuelB/my-portfolio-v1/issues"
   },
-  "homepage": "https://github.com/DevSamuelB/my-portfolio-v1#readme"
+  "homepage": "https://github.com/DevSamuelB/my-portfolio-v1#readme",
+  "dependencies": {
+    "eins-modal": "^2.2.2",
+    "normalize.css": "^8.0.1"
+  }
 }
