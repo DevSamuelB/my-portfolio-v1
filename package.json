@@ -1,0 +1,19 @@
+{
+  "name": "miportafolio",
+  "version": "1.0.0",
+  "description": "Mi portafolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevSamuelB/my-portfolio-v1.git"
+  },
+  "author": "Samuel Barreto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevSamuelB/my-portfolio-v1/issues"
+  },
+  "homepage": "https://github.com/DevSamuelB/my-portfolio-v1#readme"
+}

@@ -1,0 +1,398 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.even {
+    background: linear-gradient(#38E54D, #2192FF);
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+   
+
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    margin-bottom: 40px;
+    background: linear-gradient(to right, transparent, white, transparent);
+}
+
+header hr {
+    margin: 0;
+}
+
+.hr {
+    background: linear-gradient(to right, transparent, #2192FF, transparent);
+    margin-bottom: 40px;
+}
+
+
+
+/* NAV */
+#hamburguer {
+    align-items: flex-end;
+}
+
+video {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: -1;
+
+}
+
+.circule {
+    width: 20px;
+    border-radius: 50%;
+}
+
+#logo {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#navbar {
+    color: white;
+    box-shadow: 0 0 10px 1px rgb(46, 45, 45);
+    background-color: #38E54D;
+}
+
+#navbar div {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 0 .5rem;
+    padding: .5rem 0;
+}
+
+#navbar a {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar div:hover {
+    color: black;
+    cursor: pointer;
+    transition: color ease .3, color ease .3;
+}
+
+#navbar div img {
+    margin: 0 .5rem;
+}
+
+#navbar button {
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    padding: .2rem .7rem;
+    margin: .7rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#navbar.open button {
+    background-color: black;
+    border-radius: 0.5rem;
+}
+
+#navbar ul {
+    background: linear-gradient(#38E54D, #2192FF);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    transition: max-height .3s ease;
+    /* position: absolute; */
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#navbar.open ul {
+    max-height: 150px;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0;
+}
+
+#navbar ul a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--white);
+    transition: color ease .3s, background-color ease .3s;
+}
+
+#navbar ul a:hover,
+#navbar ul a:focus {
+    color: black;
+    background-color: white;
+}
+
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+
+
+
+/* PORTAFOLIO */
+
+#portfolio {
+   text-align: center;
+}
+#portfolio button{
+    display: block;
+    position: relative;
+    margin: 1rem auto;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    padding: 0;
+    border: none;
+    cursor: zoom-in;
+} 
+
+#portfolio img{
+    
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    transition: trasnform ease .3s;
+}
+
+#portfolio button:hover img{
+    transform: scale(1.28)
+}
+#portfolio .button:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: #38E54D;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity ease .3s;
+    opacity: 0;
+}
+
+#portfolio .button:hover:before{
+    opacity: .75;
+}
+#portfolio h4{
+    display: block;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    opacity: 0;
+    color: white;
+    transition: bottom ease .5s opacity ease .5s ;
+
+}
+#portfolio .button:hover h4{
+    bottom: 30%;
+    opacity: 1;
+}
+#portfolio .button:after {
+    content: url('../img/icons/zoom.svg');
+    width: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    transform: translate(-40%,-50%);
+    opacity: 0;
+    transition: top ease .3s opacity ease .3s;
+}
+#portfolio .button:hover:after{
+    top: 40%;
+    opacity: .75;
+}
+
+
+
+/* HABILIDADES*/
+
+#skillset{
+    padding: 10px 0;
+    text-align: center;
+}
+
+ #skillset > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .1rem;
+    margin: 1rem;
+}
+
+#skillset img{
+    border-radius: 1rem;
+    max-width: 4rem;
+    cursor: context-menu;
+}
+
+#skillset > div > div{
+    position: relative;
+}
+#skillset span{
+    width: 70px;
+    font-size: 12px;
+    background-color: black;
+    text-align: center;
+    padding: .1rem 0; 
+    border-radius: .5rem;
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    left: 55%;
+    transform: translate(-60%,10%);
+    transition: opacity ease .3s trasform ease .3s;
+    pointer-events: none;
+    opacity: 0;
+}
+#skillset > div > div:hover span{
+    opacity: 1;
+    transform: translate(-60%,0);
+}
+#skillset span:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px; 
+    border-style: solid;
+    border-color: rgba(0,0,0,0.75) transparent transparent transparent; 
+  }
+
+
+
+
+
+
+/* EXPERIENCIA */
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+#experience img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #38E54D;
+    border-radius: 25px; 
+    padding: 2rem;
+    cursor: pointer;
+    transition: border-radius ease .3s, box-shadow .3s ;
+}
+
+#experience img:hover{
+    border-radius: 0;
+    box-shadow: 0 0 10px 1px #38E54D;
+}
+
+
+
+
+#contact{
+    display: inline-block;
+   text-align: center; 
+   width: 100%;
+}
+
+#form {
+  font-size: 1.2 rem;
+
+}
+form label{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+input, textarea, input:focus,
+textarea:focus{
+    width: 50%;
+    padding: 1rem;
+    color: black;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    cursor: pointer;
+    margin: 1rem 0 2rem; 
+}
+textarea{
+    resize: none;
+
+
+}
+form button{
+    background-color: #38E54D;
+
+    margin: 1rem;
+    border: none;
+    padding: .8rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color .3 ease;
+}
+form button:hover{
+    background-color: #2e943a;
+}
+
+#contact img{
+    width: 30px;
+    height: 50px;
+    margin: 20px 0 5px 20px;
+    border-radius: 6px;
+   
+}
+#contact #github:hover{
+    background-color: white;
+}
+#contact #linkedin:hover{
+    background-color: white;
+}
+#contact #youtube:hover{
+    background-color: white;
+}
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+}

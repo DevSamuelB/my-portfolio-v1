@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Samuel Barreto Valencia | Portafolio</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./assets/img/logos/portada.png" alt="large logo">
+        <h1>Samuel Steven Barreto Valencia</h1>
+        <hr>
+        <h3>Web Developer</h3>
+        <video autoplay loop muted>
+            <source src="./assets/video/hero.mp4" type="video/mp4">
+        </video>
+    </header> 
+
+    <nav id="navbar">
+        <div>
+            <span id="spanname"><img class="circule" src="./assets/img/logos/portada.png" alt=" small logo">Samuel Steven Barreto Valencia <small>Web Developer</small></span>
+            <button id="hamburger">☰</button>
+        </div>
+        <ul>
+            <li><a class="a" href="#portafolio">Portafolio</a></li>
+            <li><a class="a" href="#skillset">Skillset</a></li>
+            <li><a class="a" href="#experience">Experience</a></li>
+            <li><a class="a" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="portfolio">
+            <h2>Portafolio</h2>
+        <hr class="hr">
+            <div>
+                <button class="button">
+                    <img src="./assets/img/skillset/html.svg" alt=""/>
+                    <h4>Proyecto personal1</h4>
+                </button>
+                <br>
+                <button class="button">
+                    <img src="./assets/img/experience/securid.png" alt=""/>
+                    <h4>Proyecto personal2</h4>
+                </button>
+            </div>
+        </section>
+
+        <section id="skillset" class="even">
+            <h2>Skillset</h2>
+            <hr>
+            <div id="divskillset">
+                <div>
+                    <img class="imgskillset" src="./assets/img/skillset/html.svg"><br>
+                    <span class="tooltip">HTML</span> 
+                </div>
+                <div>
+                    <img class="imgskillset" src="./assets/img/skillset/css.svg"><br>
+                    <span class="tooltip">CSS</span>
+                </div>
+                <div>
+                    <img class="imgskillset" src="./assets/img/skillset/js.svg"><br>
+                    <span class="tooltip">JS</span>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <hr class="hr">
+            <div>
+                <a>
+                    <img  src="./assets/img/experience/xorex.jpeg">
+                    <h4>Xorex de Colombia</h4>
+                </a>
+                <a>
+                    <img src="./assets/img/experience/securid.png">
+                    <h4>SecurID S.A.S</h4>
+                </a> 
+            </div>
+        </section>
+
+        <section id="contact" class="even">
+            <h2>Contact</h2>
+            <hr>
+            <form action="https://formspree.io/f/{form_id}" method="post">
+                <label for="email">Your email:</label><br>
+                <input name="Email" id="email" type="email"><br>
+                <label for="email">Your message:</label><br>
+                <textarea name="email" cols="30" rows="10"></textarea><br>
+                <button>Send</button>
+              </form>
+             
+            <nav>
+                <a href="https://github.com/DevSamuelB">
+                    <img id="github" src="./assets/img/social/github.svg">
+                </a>
+                <a href="https://www.linkedin.com/in/samuel-barreto-valencia-290a5a193/">
+                    <img id="linkedin" src="./assets/img/social/linkedin.svg">
+                </a>
+                <a href="">
+                    <img id="youtube" src="./assets/img/social/youtube.svg">
+                </a>
+            </nav>
+           
+            <footer><small>This page was developed and designed by Samuel Steven Barreto Valencia. ©2023 All rigths reserved. </small></footer>
+        </section>
+    </main> 
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
